@@ -1,4 +1,4 @@
-import node
+import hello_app.node as node
 
 
 def evaluate_tree(tree,expected):
