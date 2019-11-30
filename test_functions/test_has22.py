@@ -1,11 +1,13 @@
 import has22
 
-try1 = [1, 2, 2]
+try1 = [1,2,2]
+print('here')
+print(len(try1))
 returnVal = has22.has22(try1)
 
 assert returnVal == True
 
-try2 = [2, 2, 100, 1, 22, 22, 2, 2, 10, 2]
+try2 = [2,2,100,1,22,22,2,2,10,2]
 returnVal = has22.has22(try2)
 
 assert returnVal == True
