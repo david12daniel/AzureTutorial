@@ -1,8 +1,6 @@
 import has22
 
 try1 = [1,2,2]
-print('here')
-print(len(try1))
 returnVal = has22.has22(try1)
 
 assert returnVal == True
@@ -15,7 +13,7 @@ assert returnVal == True
 try3 = [0]
 returnVal = has22.has22(try3)
 
-assert returnVal == True
+assert returnVal == False
 
 try4 = [2, 2]
 returnVal = has22.has22(try4)
@@ -25,5 +23,5 @@ assert returnVal == True
 try5 = [2]
 returnVal = has22.has22(try5)
 
-assert returnVal == True
+assert returnVal == False
 
