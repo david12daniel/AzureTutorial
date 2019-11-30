@@ -47,3 +47,24 @@ print(david.name)
 print(david.sex)
 david.run()
 
+
+jobs = {
+    'll': 'MIT Lincoln Labs',
+    'cc': 'Constant Contact',
+    'rh': 'Red Hat',
+    'bae': 'BAE',
+    'ca': 'Collins Aerospace'
+}
+
+print(jobs['rh'])
+
+print(f"Length of Jobs: {len(jobs)}")
+
+print ('ray' in jobs)
+
+print ('ca' in jobs)
+
+
+for idx in jobs:
+    print(f'jobs[idx]')
+
