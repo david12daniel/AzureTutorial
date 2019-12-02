@@ -18,7 +18,7 @@ def test_rectangle_0_10():
     rect=rectangle.Rectangle(0.0,10.0)
     area = rect.area()
     perimeter = rect.perimeter()
-    assert 0.0 == area and 0.0 == perimeter
+    assert 0.0 == area and 20.0 == perimeter
 
 def test_rectangle_10_10():
     rect=rectangle.Rectangle(10.0,10.0)
