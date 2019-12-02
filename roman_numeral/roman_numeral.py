@@ -40,6 +40,7 @@ class Roman_Numeral:
         while value > 0:
             for _ in range(value//roman_numeral_values[i]):
                 numeral+=roman_numerals[i]
+                value -= roman_numeral_values[i]
 
             i=i+1
 
