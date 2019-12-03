@@ -10,7 +10,6 @@ trigger:
 strategy:
   matrix:
     linux:
-      imageName: "ubuntu-16.04"
       imageName: "RedHat:RHEL:7.4:7.4.2019041718"
     mac:
       imageName: "macos-10.13"
