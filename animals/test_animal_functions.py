@@ -26,4 +26,4 @@ def test_get_oldest_animal_float_and_int():
     dog4=dogs.Dog('Gracie',1)
     cat1=cats.Cat('Fonzi',3.4)
 
-    assert 12.1 == animal_functions.get_oldest_animal(dog1,dog2,dog3,dog4,cat1),"The get_oldest_animal function had an issue with mixed floats and integers"
+    assert 12 == animal_functions.get_oldest_animal(dog1,dog2,dog3,dog4,cat1),"The get_oldest_animal function had an issue with mixed floats and integers"
