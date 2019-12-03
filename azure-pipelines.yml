@@ -10,12 +10,24 @@ trigger:
 
 strategy:
   matrix:
-    linux:
+    linux3.7:
       imageName: 'ubuntu-latest'
-    mac:
+      python.version: '3.7'
+    linux3.6:
+      imageName: 'ubuntu-latest'
+      python.version: '3.6'
+    mac3.7:
       imageName: 'macos-latest'
-    windows:
+      python.version: '3.7'
+    mac3.6:
+      imageName: 'macos-latest'
+      python.version: '3.6'
+    windows3.7:
       imageName: 'vs2017-win2016'
+      python.version: '3.7'
+    windows3.6:
+      imageName: 'vs2017-win2016'
+      python.version: '3.6'
   maxParallel: 3
 pool:
   vmImage: $(imageName)
