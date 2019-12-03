@@ -10,9 +10,7 @@ trigger:
 strategy:
   matrix:
     linux:
-      imageName: "RedHat:RHEL:7.4:7.4.2019041718"
-    mac:
-      imageName: "macos-10.13"
+      imageName: "ubuntu-latest"
     windows:
       imageName: "vs2017-win2016"
     Python36:
