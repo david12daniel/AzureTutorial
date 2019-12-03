@@ -6,25 +6,46 @@
 trigger:
 - master
 
-pool: 
-  linux:
-    vmImage: 'ubuntu-latest'
-  windows:
-    vmImage: 'windows-latest'
+
 
 strategy:
   matrix:
-    Python36:
-      python.version: '3.6'
-    Python37:
-      python.version: '3.7'
+    linux:
+      imageName: 'ubuntu-latest'
+    mac:
+      imageName: 'macos-latest'
+    windows:
+      imageName: 'vs2017-win2016'
   maxParallel: 3
+pool:
+  vmImage: $(imageName)
+
+
+
+
+#pool: 
+#  linux:
+#    vmImage: 'ubuntu-latest'
+#  windows:
+#    vmImage: 'windows-latest'
+#  macos:
+#    vmImage: 'macos-10.13'
+
+#strategy:
+#  matrix:
+#    Python36:
+#      python.version: '3.6'
+#    Python37:
+#      python.version: '3.7'
+#  maxParallel: 3
 
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(python.version)'
-  displayName: 'Use Python $(python.version)'
+#    versionSpec: '$(python.version)'
+#  displayName: 'Use Python $(python.version)'
+    versionSpec: '3.7'
+  displayName: 'Use Python 3.7'
 
 - script: |
     python -m pip install --upgrade pip
