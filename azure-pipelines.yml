@@ -9,6 +9,8 @@ trigger:
 pool: 
   linux:
     vmImage: 'ubuntu-latest'
+  windows:
+    vmImage: 'windows-latest'
 
 strategy:
   matrix:
