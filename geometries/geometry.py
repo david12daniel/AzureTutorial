@@ -1,3 +1,7 @@
 class Geometry:
-    def __init__(self,id):
-        self.id=id
+    id=0
+
+    def __init__(self):
+        Geometry.id=Geometry.id+1
+        
+
